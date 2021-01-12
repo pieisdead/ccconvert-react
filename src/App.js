@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import CurrencyConverter from './components/CurrencyConverter'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-wrapper">
+      <section>
+            <img src="favicon.png" alt="Currency Converter" />
+            <h1>Currency Converter</h1>
+            <p>Currency Converter coverts any currency to any currency using the latest exchange rates.</p>
+            <CurrencyConverter baseCurrency="USD" toCurrency="ZAR" />
+        </section>
+      <p className="white">Currency Converter by <a href="https://www.multisites.co.za">Multisites</a></p>
     </div>
   );
 }
